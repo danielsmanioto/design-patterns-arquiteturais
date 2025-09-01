@@ -1,0 +1,1 @@
+rootProject.name = "ds-resilience-circuit-breaker"
