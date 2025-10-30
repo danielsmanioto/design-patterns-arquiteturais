@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29475b15-400e-4d81-894e-44ffc5cde49e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ds-sequences/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ds-sequences/src/main/java/com/danielsmanioto/patterns/ds_sequences/controller/SequenceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ds-sequences/src/main/java/com/danielsmanioto/patterns/ds_sequences/model/Sequence.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ds-sequences/src/main/java/com/danielsmanioto/patterns/ds_sequences/repository/SequenceRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ds-sequences/src/main/java/com/danielsmanioto/patterns/ds_sequences/service/SequenceService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds-sequences/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/ds-sequences/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ds-sequences/src/main/java/com/danielsmanioto/patterns/ds_sequences/model/Sequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/ds-sequences/src/main/java/com/danielsmanioto/patterns/ds_sequences/model/Sequence.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +34,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.DsSequencesApplication.executor": "Debug",
+    "Application.DsSequencesApplication.executor": "Run",
     "Maven.ds-sequences [clean,install].executor": "Run",
     "Maven.ds-sequences [clean].executor": "Run",
     "Maven.ds-sequences [install].executor": "Run",
@@ -47,7 +44,10 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/danielsmanioto/Documents/projects/projets_senior/design-patterns-arquiteturais"
+    "last_opened_file_path": "/Users/danielsmanioto/Documents/projects/projets_senior/design-patterns-arquiteturais",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="RunManager">

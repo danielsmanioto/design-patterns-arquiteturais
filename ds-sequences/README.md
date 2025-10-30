@@ -16,13 +16,12 @@ Java 25, spring boot
 
 create table "sequence" (
 name varchar(255) not null,
-"value" bigint not null,
+seq_value bigint not null,
 primary key (name)
 );
 
-insert into "sequence" (name, "value") values ('user', 1);
 
-SELECT * FROM "sequence"
+select * from "sequence"
 
 
 # Execucao
@@ -33,4 +32,4 @@ User: sa
 
 2. criar tabela na fase modelo de dados 
 
-3. 
+3.  executar a rota POST 
