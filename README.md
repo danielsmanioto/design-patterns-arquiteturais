@@ -162,3 +162,172 @@ Abrange logs, métricas e traces para garantir visibilidade total do comportamen
 
 # 🧭 Conclusão
 Esses padrões ajudam a construir sistemas **resilientes, escaláveis e desacoplados**, essenciais em ambientes de **microsserviços e arquiteturas distribuídas**.
+
+--
+# 🧩 Padrões de Microsserviços
+
+Os **padrões de microsserviços** ajudam a estruturar sistemas compostos por múltiplos serviços independentes, escaláveis e de fácil manutenção.  
+Eles tratam desde o **design dos serviços** até **observabilidade, segurança e deploy**.
+
+---
+
+## Single Responsibility
+Cada microsserviço deve ter uma responsabilidade clara e única, reduzindo o acoplamento e facilitando a evolução independente.  
+**Exemplo:** um serviço apenas para autenticação, outro apenas para cobrança.
+
+---
+
+## Bounded Context
+Baseado em DDD (Domain-Driven Design). Cada serviço representa um **contexto delimitado** do domínio.  
+**Exemplo:** “Pagamento”, “Entrega”, “Catálogo” — cada um com suas próprias entidades e regras.
+
+---
+
+## Database per Service
+Cada microsserviço tem seu próprio banco de dados, evitando acoplamento e promovendo autonomia.  
+**Exemplo:** Serviço de pedidos com PostgreSQL; serviço de clientes com MongoDB.
+
+---
+
+## API Gateway
+Ponto único de entrada para os microsserviços, tratando autenticação, roteamento, cache e rate limiting.  
+**Exemplo:** Kong, NGINX, Traefik, AWS API Gateway.
+
+---
+
+## Service Discovery
+Permite que microsserviços se encontrem dinamicamente sem depender de URLs fixas.  
+**Exemplo:** Netflix Eureka, Consul, Kubernetes DNS.
+
+---
+
+## Config Server
+Centraliza configurações para múltiplos microsserviços, com atualização dinâmica.  
+**Exemplo:** Spring Cloud Config, Consul KV.
+
+---
+
+## Circuit Breaker
+Evita falhas em cascata ao interromper chamadas para serviços que estão instáveis.  
+**Exemplo:** Resilience4j, Hystrix.
+
+---
+
+## Saga Pattern
+Gerencia **transações distribuídas**, garantindo consistência eventual entre múltiplos serviços.  
+**Exemplo:** Orquestração via workflow (Step Functions, Temporal.io) ou coreografia via eventos (Kafka).
+
+---
+
+## CQRS
+Separa comandos (escritas) de queries (leituras), melhorando escalabilidade e desempenho.  
+**Exemplo:** gravação via eventos e leitura via projeções otimizadas.
+
+---
+
+## Event Sourcing
+Registra todas as mudanças como eventos, permitindo reconstruir o estado atual do sistema.  
+**Exemplo:** Kafka + snapshots, Axon Framework.
+
+---
+
+## Strangler Fig Pattern
+Migra sistemas monolíticos para microsserviços de forma incremental, substituindo partes aos poucos.  
+**Exemplo:** Novo serviço intercepta rotas do monólito até substituí-lo completamente.
+
+---
+
+## API Composition / Aggregator
+Combina dados de múltiplos microsserviços em uma única resposta.  
+**Exemplo:** Serviço “Order Summary” que junta informações de clientes, pagamentos e produtos.
+
+---
+
+## Backend for Frontend (BFF)
+Cria uma API específica para cada tipo de cliente (web, mobile, IoT), otimizando payloads e performance.  
+**Exemplo:** BFF para app mobile e outro para web.
+
+---
+
+## Service Mesh
+Camada de infraestrutura que gerencia comunicação, segurança e observabilidade entre serviços.  
+**Exemplo:** Istio, Linkerd, Consul Connect.
+
+---
+
+## Sidecar Pattern
+Executa componentes auxiliares (proxy, logs, métricas) junto com o serviço principal no mesmo pod/container.  
+**Exemplo:** Envoy Proxy com cada microsserviço.
+
+---
+
+## Bulkhead
+Isola recursos por serviço ou função, impedindo que a falha de um componente afete os demais.  
+**Exemplo:** pools de threads separados para cada integração.
+
+---
+
+## Retry / Timeout / Fallback
+Define políticas de repetição e tempo limite em chamadas remotas, evitando travamentos e degradação.  
+**Exemplo:** Retry automático com backoff exponencial.
+
+---
+
+## Distributed Tracing
+Permite rastrear requisições entre microsserviços para entender o fluxo completo e medir latência.  
+**Exemplo:** Jaeger, Zipkin, OpenTelemetry.
+
+---
+
+## Centralized Logging
+Consolida logs de todos os serviços em um único ponto de análise.  
+**Exemplo:** ELK Stack (Elasticsearch, Logstash, Kibana), Loki + Grafana.
+
+---
+
+## Health Check / Heartbeat
+Endpoints e mecanismos para verificar o estado de cada serviço.  
+**Exemplo:** `/health` endpoint, Kubernetes `livenessProbe`.
+
+---
+
+## Canary Release
+Implanta uma nova versão de serviço para uma pequena parcela dos usuários antes do rollout completo.  
+**Exemplo:** 5% do tráfego com nova versão.
+
+---
+
+## Blue-Green Deployment
+Mantém duas versões do ambiente (Blue e Green) para alternar releases sem downtime.  
+**Exemplo:** Kubernetes com dois deployments ativos.
+
+---
+
+## Feature Toggle
+Ativa ou desativa recursos sem necessidade de deploy, facilitando experimentos e rollbacks.  
+**Exemplo:** LaunchDarkly, Unleash.
+
+---
+
+## Observability
+Combina métricas, logs e traces para oferecer visibilidade completa sobre o comportamento dos microsserviços.  
+**Exemplo:** Prometheus, Grafana, OpenTelemetry.
+
+---
+
+## Security Patterns
+Define estratégias de autenticação, autorização e comunicação segura entre serviços.  
+**Exemplo:** OAuth2, mTLS, JWT, API Keys.
+
+---
+
+## API Versioning
+Permite evolução das APIs sem quebrar compatibilidade com versões antigas.  
+**Exemplo:** `/v1/users`, `/v2/users`.
+
+---
+
+# 🧭 Conclusão
+
+Os **padrões de microsserviços** garantem **independência, resiliência, escalabilidade e observabilidade**.  
+Usados em conjunto com os **padrões arquiteturais** e **de integração**, formam a base para sistemas modernos e robustos.
