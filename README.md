@@ -331,3 +331,165 @@ Permite evolução das APIs sem quebrar compatibilidade com versões antigas.
 
 Os **padrões de microsserviços** garantem **independência, resiliência, escalabilidade e observabilidade**.  
 Usados em conjunto com os **padrões arquiteturais** e **de integração**, formam a base para sistemas modernos e robustos.
+
+
+# 🧠 Padrões Avançados para Arquitetos e Tech Leads
+
+> Conjunto de práticas e padrões além do básico de microsserviços, voltados a arquiteturas modernas com foco em **back-end, dados e front-end**.
+
+---
+
+## 🔩 Backend e Integração
+
+### Event-Driven Architecture (EDA)
+Sistemas reativos baseados em eventos, promovendo baixo acoplamento e escalabilidade.  
+**Exemplo:** microservices reagindo a eventos em Kafka, Pulsar ou SNS.
+
+### Command Pattern
+Encapsula requisições como objetos, permitindo filas, reprocessamentos e auditoria.  
+**Exemplo:** Command Handler em sistemas CQRS.
+
+### Outbox Pattern
+Garante consistência entre banco e envio de eventos (solução para o “dual write problem”).  
+**Exemplo:** Gravar evento e dado na mesma transação e depois publicar via worker.
+
+### Idempotency Pattern
+Evita efeitos colaterais em operações repetidas, essencial em sistemas distribuídos.  
+**Exemplo:** API de pagamento com idempotency key.
+
+### API Composition Layer
+Camada intermediária que orquestra múltiplos microsserviços para simplificar o consumo por clientes.  
+**Exemplo:** GraphQL Gateway, API Composer.
+
+### GraphQL Federation
+Divide o schema GraphQL em múltiplos subgrafos mantidos por equipes diferentes.  
+**Exemplo:** Apollo Federation.
+
+### Serverless Pattern
+Divide responsabilidades em funções menores com escalabilidade automática.  
+**Exemplo:** AWS Lambda, Azure Functions.
+
+---
+
+## 🧮 Padrões e Arquitetura de Dados
+
+### Data Mesh
+Arquitetura distribuída de dados baseada em domínios (autonomia + governança).  
+**Exemplo:** cada domínio tem seu próprio “data product”.
+
+### Data Lakehouse
+Combina flexibilidade de Data Lakes com estrutura de Data Warehouses.  
+**Exemplo:** Delta Lake, Apache Iceberg, Snowflake.
+
+### Change Data Capture (CDC)
+Captura mudanças em tempo real nos bancos e envia para streams.  
+**Exemplo:** Debezium, StreamSets, Kafka Connect.
+
+### Lambda Architecture
+Combina processamento batch + stream para análises completas e em tempo real.  
+**Exemplo:** Hadoop + Spark Streaming.
+
+### Kappa Architecture
+Processamento totalmente baseado em streams, simplificando pipelines.  
+**Exemplo:** Kafka Streams, Flink.
+
+### Domain Data Contracts
+Define contratos de dados entre domínios para garantir qualidade e versionamento.  
+**Exemplo:** Avro Schema Registry, Protocol Buffers.
+
+---
+
+## 🎨 Frontend Patterns
+
+### Micro Frontends
+Divide o front-end em módulos independentes, alinhados com os domínios de negócio.  
+**Exemplo:** cada time entrega seu microfrontend via Module Federation.
+
+### BFF (Backend for Frontend)
+APIs específicas para cada tipo de cliente (mobile, web, IoT).  
+**Exemplo:** Node.js ou GraphQL resolvers dedicados ao front.
+
+### Design System / Component Library
+Define padrões visuais e comportamentais reutilizáveis entre projetos.  
+**Exemplo:** Storybook + Figma Tokens.
+
+### Progressive Web Apps (PWA)
+Aplicações web com comportamento de app nativo (offline, push, installable).  
+**Exemplo:** React + Workbox.
+
+### SSR / SSG / ISR
+Renderização híbrida para performance e SEO.  
+**Exemplo:** Next.js (Static, Server-side ou Incremental Regeneration).
+
+---
+
+## ☁️ Infraestrutura, Entrega e Observabilidade
+
+### Twelve-Factor App
+12 princípios para construir aplicações cloud-native.  
+**Exemplo:** separação de configs, logs, processos stateless, etc.
+
+### GitOps
+Fluxos de deploy e configuração controlados por versionamento.  
+**Exemplo:** ArgoCD, Flux.
+
+### Infrastructure as Code (IaC)
+Infra gerenciada como código versionado.  
+**Exemplo:** Terraform, Pulumi.
+
+### Chaos Engineering
+Injeta falhas propositais para validar resiliência.  
+**Exemplo:** Chaos Monkey, Gremlin.
+
+### Policy as Code
+Automatiza regras de segurança e compliance.  
+**Exemplo:** Open Policy Agent (OPA), Kyverno.
+
+### Observability-Driven Development (ODD)
+Desenhar sistemas já pensando em métricas, logs e traces como parte do design.  
+**Exemplo:** OpenTelemetry + Grafana + Tempo.
+
+---
+
+## 🧭 Arquitetura Organizacional e Estratégica
+
+### Domain-Driven Design (DDD)
+Base conceitual para dividir domínios e projetar microsserviços de forma coerente.  
+**Exemplo:** Context Maps, Aggregates, Entities, Value Objects.
+
+### Hexagonal Architecture (Ports and Adapters)
+Isola lógica de negócio das dependências externas.  
+**Exemplo:** Camadas “core”, “adapters”, “ports”.
+
+### Clean Architecture
+Organiza camadas em círculos concêntricos, invertendo dependências.  
+**Exemplo:** domínio no centro, frameworks na borda.
+
+### Onion Architecture
+Similar à Clean, reforça separação entre domínio e infraestrutura.
+
+### Event Storming
+Workshop colaborativo para mapear fluxos de domínio e identificar bounded contexts.  
+**Exemplo:** sessões com post-its amarelos e laranjas 😄
+
+### Team Topologies
+Modelo organizacional que alinha times aos fluxos de valor e padrões de comunicação.  
+**Exemplo:** Stream-aligned teams + Platform teams.
+
+### Evolutionary Architecture
+Permite que o sistema mude de forma incremental, guiado por métricas e fitness functions.  
+**Exemplo:** métricas automatizadas que avaliam acoplamento, latência, etc.
+
+---
+
+# 🏁 Conclusão
+
+Esses padrões representam o **nível sênior/arquitetural moderno** — onde técnica e estratégia se unem:
+
+- Backend: resiliência, consistência e orquestração.  
+- Dados: governança, streaming e produtos de dados.  
+- Frontend: modularidade e experiência unificada.  
+- Infra: automação e resiliência.  
+- Organização: times, domínios e evolução arquitetural.
+
+> ⚙️ **Dominar esses padrões te coloca em outro patamar como arquiteto sênior**, conectando arquitetura técnica, organizacional e de produto.
