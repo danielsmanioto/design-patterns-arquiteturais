@@ -10,6 +10,10 @@ Padrão para gerenciar configurações de forma centralizada e consistente entre
 
 ---
 
+## Sequence 
+
+servico que gera ids sequenciais
+
 ## Sequence
 Representa a execução de passos coordenados, normalmente em fluxos de orquestração ou workflows.  
 **Exemplo:** AWS Step Functions, Temporal.io, Camunda.
