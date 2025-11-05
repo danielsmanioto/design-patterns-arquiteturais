@@ -1,5 +1,4 @@
 name: Auto PR from feature/* to main
-
 on:
   push:
     branches:
