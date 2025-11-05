@@ -43,7 +43,7 @@ Padrão de comunicação assíncrona onde produtores publicam mensagens e consum
 
 ---
 
-## Webhook 
+## Webhook [Criado]
 Permite a comunicação reativa entre sistemas via chamadas HTTP quando um evento ocorre.  
 **Exemplo:** Notificação de pagamento (Stripe → seu backend).
 
