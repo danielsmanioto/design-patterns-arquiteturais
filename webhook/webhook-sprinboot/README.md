@@ -13,7 +13,6 @@ o sistema terceiro vai invocar a rota http://localhost:8086/webhook
 e com isto nosso sistema sabera o que fazer. 
 
 ## Tecnologias
-
 - JAVA25
 - SPRING BOOT
 
@@ -23,3 +22,9 @@ curl -X POST http://localhost:8086/webhook \
 -H "X-Webhook-Token: meu-token-secreto" \
 -d '{"mensagem":"Olá, webhook!"}'
 
+
+# Testando via python
+1. suba a aplicacao spring 
+2. pip3 install requests
+2. execute a aplicacao python 
+3. python3 lambda_executa_webhook.py 
