@@ -1,13 +1,17 @@
 # Websocket 
+
+Exemplo de um Chat real 
+
 - Java25 
 - Spring boot 
 - Maven
+- Thymeleaf 
 
 ## build 
-mvn clean install 
+`mvn clean install` 
 
 ## run 
-mvn spring boot:run 
+`mvn spring boot:run` 
 
 ## executar 
 
