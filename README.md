@@ -2,6 +2,11 @@
 
 Este documento lista os principais **padrões arquiteturais** e **de integração** utilizados em sistemas distribuídos, microsserviços e aplicações escaláveis.
 
+## Informacoes para contribuicao 
+- Projeto organizado com estrutura trunk based
+- criar uma branch com seguinte regra feature/** saindo da branch main
+- sera criado automaticamente o PR.
+
 ---
 
 ## Configuration
