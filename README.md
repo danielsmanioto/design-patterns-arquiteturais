@@ -9,13 +9,13 @@ Este documento lista os principais **padrões arquiteturais** e **de integraçã
 
 ---
 
-## Configuration
+## Configuration [Criado]
 Padrão para gerenciar configurações de forma centralizada e consistente entre serviços.  
 **Exemplo:** Spring Cloud Config, Consul, etcd.
 
 ---
 
-## Sequence 
+## Sequence [Criado]
 
 servico que gera ids sequenciais
 
@@ -25,31 +25,31 @@ Representa a execução de passos coordenados, normalmente em fluxos de orquestr
 
 ---
 
-## Lock Distribuído
+## Lock Distribuído [Criado]
 Mecanismo para evitar condições de corrida e garantir exclusividade em operações críticas em ambientes distribuídos.  
 **Exemplo:** Redlock (Redis), Zookeeper.
 
 ---
 
-## Circuit Breaker
+## Circuit Breaker [Criado]
 Evita que falhas em um serviço se propaguem para outros, “abrindo o circuito” quando há erros sucessivos.  
 **Exemplo:** Netflix Hystrix, Resilience4j.
 
 ---
 
-## Pub/Sub
+## Pub/Sub [Criado]
 Padrão de comunicação assíncrona onde produtores publicam mensagens e consumidores as recebem por assinatura.  
 **Exemplo:** Kafka, Google Pub/Sub, Redis Streams.
 
 ---
 
-## Webhook
+## Webhook 
 Permite a comunicação reativa entre sistemas via chamadas HTTP quando um evento ocorre.  
 **Exemplo:** Notificação de pagamento (Stripe → seu backend).
 
 ---
 
-## WebSocket
+## WebSocket [Criado]
 Canal de comunicação bidirecional e em tempo real entre cliente e servidor.  
 **Exemplo:** Chats, dashboards, notificações ao vivo.
 
