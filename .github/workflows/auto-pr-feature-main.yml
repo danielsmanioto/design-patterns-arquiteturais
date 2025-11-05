@@ -1,0 +1,23 @@
+name: Auto PR from feature/* to main
+
+on:
+  push:
+    branches:
+      - 'feature/**'
+
+jobs:
+  create-pull-request:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Create Pull Request to main
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          base: main
+          branch: ${{ github.ref_name }}
+          title: 'Auto PR: ${{ github.ref_name }} → main'
+          body: 'Este PR foi criado automaticamente ao commitar na branch ${{ github.ref_name }}.'
+          draft: false
