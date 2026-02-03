@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29475b15-400e-4d81-894e-44ffc5cde49e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/request-response/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,12 +42,20 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/danielsmanioto/Documents/projects/projets_senior/design-patterns-arquiteturais&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/danielsmanioto/Documents/projects/projets_senior/design-patterns-arquiteturais/request-response/grpc-ms1_vs_ms2&quot;,
     &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/request-response/grpc-ms1_vs_ms2" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/request-response/grpc-ms1_vs_ms2" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="DsSequencesApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.danielsmanioto.patterns.ds_sequences.DsSequencesApplication" />
