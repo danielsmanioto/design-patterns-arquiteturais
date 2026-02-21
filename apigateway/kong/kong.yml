@@ -1,0 +1,18 @@
+_format_version: "3.0"
+
+services:
+  - name: api1-service
+    url: http://api1:8080
+    routes:
+      - name: api1-route
+        paths:
+          - /api1
+        strip_path: false
+
+  - name: api2-service
+    url: http://api2:8080
+    routes:
+      - name: api2-route
+        paths:
+          - /api2
+        strip_path: false
