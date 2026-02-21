@@ -1,0 +1,19 @@
+services:
+  api1:
+    build: ./api1
+    container_name: nginx-api1
+
+  api2:
+    build: ./api2
+    container_name: nginx-api2
+
+  nginx:
+    image: nginx:alpine
+    container_name: nginx-gateway
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - "8080:80"
+    depends_on:
+      - api1
+      - api2
