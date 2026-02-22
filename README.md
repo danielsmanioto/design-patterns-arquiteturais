@@ -82,13 +82,13 @@ Coordena transações distribuídas em múltiplos serviços, garantindo consist�
 
 ---
 
-## API Gateway
+## API Gateway [Criado]
 Ponto único de entrada para múltiplos microsserviços, gerenciando autenticação, roteamento e segurança.  
 **Exemplo:** Kong, NGINX, AWS API Gateway.
 
 ---
 
-## Aggregator
+## Aggregator [Criado]
 Combina resultados de múltiplos serviços em uma única resposta agregada.  
 **Exemplo:** API Gateway que chama vários microservices.
 
