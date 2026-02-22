@@ -1,0 +1,24 @@
+services:
+  pessoas:
+    build: ./pessoas
+    container_name: aggregator-pessoas
+    ports:
+      - "3001:3001"
+
+  contas:
+    build: ./contas
+    container_name: aggregator-contas
+    ports:
+      - "3002:3002"
+
+  aggregator:
+    build: ./aggregator
+    container_name: aggregator-api
+    ports:
+      - "3000:3000"
+    environment:
+      PESSOAS_URL: http://pessoas:3001
+      CONTAS_URL: http://contas:3002
+    depends_on:
+      - pessoas
+      - contas
