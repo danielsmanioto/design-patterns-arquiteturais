@@ -51,7 +51,8 @@ Canal de comunicação bidirecional e em tempo real entre cliente e servidor.
 
 ---
 
-## Request/Response
+## Request/Response [Criado]
+
 Modelo clássico de comunicação síncrona entre cliente e servidor.  
 **Exemplo:** REST, gRPC.
 
