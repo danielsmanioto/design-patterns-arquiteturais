@@ -8,7 +8,6 @@
 [![Docker](https://img.shields.io/badge/docker-ready-blue?style=flat-square)](Dockerfile)
 
 > Guia completo dos principais **padrões arquiteturais**, **de integração** e **de microsserviços** utilizados em sistemas distribuídos e aplicações escaláveis.
-
 ---
 
 ## 📋 Como Contribuir
